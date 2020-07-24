@@ -11,3 +11,8 @@ test_that("hasn't changed", {
     update = FALSE
   )
 })
+
+test_that("is not different compared to reference", {
+  reference <- readRDS(test_path("ref-overwrite_demo"))
+  expect_identical(overwrite_demo, reference)
+})

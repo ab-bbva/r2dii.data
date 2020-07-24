@@ -5,6 +5,11 @@ test_that("hasn't changed", {
   )
 })
 
+test_that("is not different compared to reference", {
+  reference <- readRDS(test_path("ref-data_dictionary"))
+  expect_identical(data_dictionary, reference)
+})
+
 test_that("has the expected names", {
   expect_named(
     data_dictionary,
@@ -17,8 +22,9 @@ test_that("defines the expected objects", {
 
   expected_datasets <- c(
     "ald_demo",
-    "ald_scenario_demo",
+    "co2_intensity_scenario_demo",
     "data_dictionary",
+    "green_or_brown",
     "isic_classification",
     "iso_codes",
     "loanbook_demo",
@@ -26,8 +32,11 @@ test_that("defines the expected objects", {
     "naics_classification",
     "overwrite_demo",
     "region_isos",
+    "region_isos_demo",
+    "scenario_demo_2020",
     "sector_classifications",
-    "scenario_demo_2020"
+    "sic_classification"
+
   )
 
   expect_equal(sort(datasets), sort(expected_datasets))

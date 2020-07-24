@@ -4,3 +4,8 @@ test_that("hasn't changed", {
     update = FALSE
   )
 })
+
+test_that("is not different compared to reference", {
+  reference <- readRDS(test_path("ref-loanbook_demo"))
+  expect_identical(loanbook_demo, reference)
+})

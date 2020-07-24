@@ -5,11 +5,7 @@
 \alias{iso_codes}
 \title{Countries and codes}
 \format{
-\code{iso_codes} is a \link{data.frame} with columns:
-\itemize{
-\item \code{country} (character): Country name.
-\item \code{country_iso} (character): Corresponding ISO code.
-}
+An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 286 rows and 2 columns.
 }
 \usage{
 iso_codes
@@ -20,6 +16,14 @@ This dataset maps countries to codes.
 For information about the ISO standard for country codes see
 \url{https://www.iso.org/iso-3166-country-codes.html}.
 }
+\section{Definitions}{
+
+\itemize{
+\item \code{country} (character): Country name.
+\item \code{country_iso} (character): Corresponding ISO code.
+}
+}
+
 \examples{
 head(iso_codes)
 }
@@ -27,6 +31,7 @@ head(iso_codes)
 \link{data_dictionary}
 
 Other iso codes: 
+\code{\link{region_isos_demo}},
 \code{\link{region_isos}}
 }
 \concept{iso codes}

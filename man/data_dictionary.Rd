@@ -5,14 +5,7 @@
 \alias{data_dictionary}
 \title{Column definitions of all datasets}
 \format{
-\code{data_dictionary} is a \link{data.frame} with columns:
-\itemize{
-\item \code{column} (character): The name of a dataset-column.
-\item \code{dataset} (character): The name of a dataset.
-\item \code{definition} (character): The definition of a dataset-column.
-\item \code{typeof} (character): The result of \code{typeof()}, one of double, integer,
-logical, or character.
-}
+An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 88 rows and 4 columns.
 }
 \usage{
 data_dictionary
@@ -20,6 +13,16 @@ data_dictionary
 \description{
 This dataset provides metadata about all datasets in the package r2dii.data.
 }
+\section{Definitions}{
+
+\itemize{
+\item \code{column} (character): The name of a dataset-column.
+\item \code{dataset} (character): The name of a dataset.
+\item \code{definition} (character): The definition of a dataset-column.
+\item \code{typeof} (character): The result of \code{typeof()}, one of double, integer, logical, or character..
+}
+}
+
 \examples{
 head(data_dictionary)
 }

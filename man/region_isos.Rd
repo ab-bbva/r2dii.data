@@ -5,12 +5,7 @@
 \alias{region_isos}
 \title{A dataset outlining various region definitions}
 \format{
-\code{region_isos} is a \link{data.frame} with columns:
-\itemize{
-\item \code{isos} (character): Countries in region, defined by iso code.
-\item \code{region} (character): Benchmark region name.
-\item \code{source} (character): Source publication from which the regions are defined.
-}
+An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 1728 rows and 3 columns.
 }
 \usage{
 region_isos
@@ -21,6 +16,15 @@ This dataset maps codes representing countries to regions.
 For information about the ISO standard for country codes see
 \url{https://www.iso.org/iso-3166-country-codes.html}.
 }
+\section{Definitions}{
+
+\itemize{
+\item \code{isos} (character): Countries in region, defined by iso code.
+\item \code{region} (character): Benchmark region name.
+\item \code{source} (character): Source publication from which the regions are defined.
+}
+}
+
 \examples{
 head(region_isos)
 }
@@ -28,7 +32,8 @@ head(region_isos)
 \link{data_dictionary}
 
 Other iso codes: 
-\code{\link{iso_codes}}
+\code{\link{iso_codes}},
+\code{\link{region_isos_demo}}
 }
 \concept{iso codes}
 \keyword{datasets}

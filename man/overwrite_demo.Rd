@@ -5,16 +5,7 @@
 \alias{overwrite_demo}
 \title{A demonstration dataset used to overwrite specific entity names or sectors}
 \format{
-\code{overwrite_demo} is a \link{data.frame} with columns:
-\itemize{
-\item \code{id_2dii} (character): IDs of the entities to overwrite.
-\item \code{level} (character): Which level should be overwritten (e.g.
-direct_loantaker or ultimate_parent).
-\item \code{name} (character): Overwrite name (if only overwriting sector, type NA).
-\item \code{sector} (character): Overwrite sector (if only overwriting name, type NA).
-\item \code{source} (character): What is the source of this information (leave as
-"manual" for now, may remove this flag later).
-}
+An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 2 rows and 5 columns.
 }
 \usage{
 overwrite_demo
@@ -27,6 +18,17 @@ Demo datasets are synthetic because most financial data is strictly private;
 they help to demonstrate and test the implementation in R of 'PACTA'
 (\url{https://2degrees-investing.org/resource/pacta/}).
 }
+\section{Definitions}{
+
+\itemize{
+\item \code{id_2dii} (character): IDs of the entities to overwrite.
+\item \code{level} (character): Which level should be overwritten (e.g. direct_loantaker or ultimate_parent).
+\item \code{name} (character): Overwrite name (if only overwriting sector, type NA).
+\item \code{sector} (character): Overwrite sector (if only overwriting name, type NA).
+\item \code{source} (character): What is the source of this information (leave as "manual" for now, may remove this flag later).
+}
+}
+
 \examples{
 head(overwrite_demo)
 }
@@ -35,8 +37,9 @@ head(overwrite_demo)
 
 Other demo datasets: 
 \code{\link{ald_demo}},
-\code{\link{ald_scenario_demo}},
+\code{\link{co2_intensity_scenario_demo}},
 \code{\link{loanbook_demo}},
+\code{\link{region_isos_demo}},
 \code{\link{scenario_demo_2020}}
 }
 \concept{demo datasets}
